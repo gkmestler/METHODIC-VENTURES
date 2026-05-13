@@ -44,8 +44,8 @@ export default function ApproachPage() {
                       />
                     </div>
                     <div className="criteria-text">
-                      <h3>$300K - $2M</h3>
-                      <p>in EBITDA</p>
+                      <h3><span style={{ whiteSpace: 'nowrap' }}>$500K - $1.5M</span></h3>
+                      <p>Cash Flow</p>
                     </div>
                   </div>
 
