@@ -18,7 +18,6 @@ export default function Footer() {
           <nav className="footer-nav">
             <ul className="footer-links">
               <li><Link href="/#team">Our People</Link></li>
-              <li><Link href="/portfolio">Portfolio</Link></li>
               <li><Link href="/approach">Our Approach</Link></li>
               <li><Link href="/sell">Sell</Link></li>
             </ul>

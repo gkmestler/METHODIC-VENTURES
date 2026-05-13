@@ -625,12 +625,17 @@ h1, h2, h3 {
   overflow: hidden;
 }
 
+.founders-image-frame {
+  border: 2px solid #000000;
+  overflow: hidden;
+  line-height: 0;
+}
+
 .founders-image {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 0;
-  border: 2px solid #000000;
 }
 
 .founders-caption {
@@ -847,6 +852,10 @@ h1, h2, h3 {
   .advisors h2 {
     font-size: 48px;
   }
+}
+
+.advisor-stats-grid {
+  margin-bottom: 60px;
 }
 
 .advisors-grid {

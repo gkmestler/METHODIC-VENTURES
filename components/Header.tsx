@@ -78,7 +78,6 @@ export default function Header() {
       // Determine which link was previously active
       let prevActive: string | null = null
       if (prevPathname === '/') prevActive = 'team'
-      else if (prevPathname === '/portfolio') prevActive = 'portfolio'
       else if (prevPathname === '/approach') prevActive = 'approach'
       else if (prevPathname === '/sell') prevActive = 'sell'
 
@@ -102,8 +101,6 @@ export default function Header() {
     let isActive = false
     if (linkId === 'team') {
       isActive = pathname === '/' && isTeamSectionVisible
-    } else if (linkId === 'portfolio') {
-      isActive = pathname === '/portfolio'
     } else if (linkId === 'approach') {
       isActive = pathname === '/approach'
     } else if (linkId === 'sell') {
@@ -143,7 +140,6 @@ export default function Header() {
             <nav>
               <ul className="nav-links">
                 <li><Link href="/#team" className={getNavLinkClass('team')} onClick={() => handleNavClick('team')}>Our People</Link></li>
-                <li><Link href="/portfolio" className={getNavLinkClass('portfolio')} onClick={() => handleNavClick('portfolio')}>Portfolio</Link></li>
                 <li><Link href="/approach" className={getNavLinkClass('approach')} onClick={() => handleNavClick('approach')}>Our Approach</Link></li>
                 <li><Link href="/sell" className={getNavLinkClass('sell')} onClick={() => handleNavClick('sell')}>Sell</Link></li>
               </ul>
@@ -163,7 +159,6 @@ export default function Header() {
       <nav className={`mobile-nav ${isMobileMenuOpen ? 'open' : ''} ${isDarkHeader ? 'mobile-nav-dark' : ''}`}>
         <ul className="mobile-nav-links">
           <li><Link href="/#team" className={getNavLinkClass('team')} onClick={() => { handleNavClick('team'); setIsMobileMenuOpen(false) }}>Our People</Link></li>
-          <li><Link href="/portfolio" className={getNavLinkClass('portfolio')} onClick={() => { handleNavClick('portfolio'); setIsMobileMenuOpen(false) }}>Portfolio</Link></li>
           <li><Link href="/approach" className={getNavLinkClass('approach')} onClick={() => { handleNavClick('approach'); setIsMobileMenuOpen(false) }}>Our Approach</Link></li>
           <li><Link href="/sell" className={getNavLinkClass('sell')} onClick={() => { handleNavClick('sell'); setIsMobileMenuOpen(false) }}>Sell</Link></li>
         </ul>

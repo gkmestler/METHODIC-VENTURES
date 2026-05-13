@@ -4,7 +4,7 @@ export default function Statistics() {
   const stats = [
     { value: '2024', label: 'Founded' },
     { value: '$5M+', label: 'In Revenue' },
-    { value: '9', label: 'Entrepreneurs' },
+    { value: 'Trade Services', label: 'Target Industry' },
     { value: '7', label: 'Strategic Advisors' },
   ]
 

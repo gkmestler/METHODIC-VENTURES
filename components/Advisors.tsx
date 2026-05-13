@@ -2,6 +2,13 @@ import React from 'react'
 import Image from 'next/image'
 
 export default function Advisors() {
+  const advisorStats = [
+    { value: '$2.6B+', label: 'In M&A Transaction Value' },
+    { value: '100+', label: 'M&A Deals Advised' },
+    { value: '$1B+', label: 'Private Capital Deployed' },
+    { value: '150+', label: 'Years Combined Experience' },
+  ]
+
   const advisors = [
     {
       name: 'Brad Johnson',
@@ -60,19 +67,21 @@ export default function Advisors() {
       image: '/images/chad-mestler.jpg',
       linkedin: 'https://www.linkedin.com/in/chadmestler/',
     },
-    {
-      name: 'Vincent Sica',
-      title: 'Founder of Vintra Franchise Holdings',
-      image: '/images/vincent-sica.jpg',
-      linkedin: '',
-    },
   ]
 
   return (
     <section className="advisors">
       <div className="container">
         <div className="advisors-content">
-          <h2>Strategic Advisors</h2>
+          <h2>Advisory Board</h2>
+          <div className="stats-grid advisor-stats-grid">
+            {advisorStats.map((stat, index) => (
+              <div key={index} className="stat-card">
+                <h3>{stat.value}</h3>
+                <p>{stat.label}</p>
+              </div>
+            ))}
+          </div>
           <div className="advisors-grid">
             {advisors.map((advisor, index) => (
               <div key={index} className="advisor-card">
