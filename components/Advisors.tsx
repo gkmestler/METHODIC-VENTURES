@@ -67,6 +67,17 @@ export default function Advisors() {
       image: '/images/chad-mestler.jpg',
       linkedin: 'https://www.linkedin.com/in/chadmestler/',
     },
+    {
+      name: 'Tiffany Sergi',
+      role: 'Operations',
+      title: 'COO/CEO with 12+ years scaling service-based businesses',
+      image: '/images/Tiffany Sergi.png',
+      linkedin: 'https://www.linkedin.com/in/tiffany-sergi-111527256/',
+      objectPosition: 'top',
+      grayscale: true,
+      imageScale: 1.3,
+      imageOffsetY: 8,
+    },
   ]
 
   return (
@@ -96,6 +107,8 @@ export default function Advisors() {
                       style={{
                         ...(advisor.imageScale ? { transform: `scale(${advisor.imageScale}) translateY(${advisor.imageOffsetY || 0}px)` } : {}),
                         ...(advisor.containImage ? { objectFit: 'contain' } : {}),
+                        ...(advisor.objectPosition ? { objectPosition: advisor.objectPosition } : {}),
+                        ...(advisor.grayscale ? { filter: 'grayscale(100%)' } : {}),
                       }}
                     />
                   </div>
