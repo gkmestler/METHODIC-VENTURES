@@ -6,11 +6,11 @@ export default function AboutPE() {
       <div className="container">
         <div className="about-pe-content">
           <h2>
-            Methodic Is <em>Not</em> Your Typical
-            <span className="line2">Private Equity Firm</span>
+            Methodic Ventures Is a
+            <span className="line2">Business Acquisition Group</span>
           </h2>
           <p>
-            Unlike other firms, we use a long-term, buy-and-build approach focused on continuously improving businesses over time rather than flipping them. We work closely with existing teams, and keep what already works while modernizing the business to stay competitive in today's market. We protect the owner's legacy and drive new growth through technology and operational excellence.
+            We buy companies and build them, not flip them. Methodic focuses on the essential trades across New England: HVAC, electrical, plumbing, landscaping, fire safety, and roofing. We go deep in a few trades we understand, then connect those businesses into platforms that share customers, talent, and systems. When we acquire a company, the team stays and the name on the truck stays. We bring in capital and modern systems, then scale what already works.
           </p>
           <a href="/approach" className="outline-button">
             Our Approach
