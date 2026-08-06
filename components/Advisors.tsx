@@ -21,6 +21,14 @@ export default function Advisors() {
       imageOffsetY: 10,
     },
     {
+      name: 'Warren Cross',
+      role: 'Trades',
+      title: 'Founder & CEO of Cross Services Group, a 35-year home services and trades operator in Greater Boston',
+      image: '/images/Warren Cross.jpeg',
+      linkedin: 'https://www.linkedin.com/in/warrencrossjr/',
+      grayscale: true,
+    },
+    {
       name: 'Scott Waxler',
       role: 'M&A',
       title: 'Founder, Lockebridge Capital Partners',
@@ -60,6 +68,15 @@ export default function Advisors() {
       image: '/images/edward-gorelick.jpg',
       linkedin: '',
     },
+    // Temporarily removed from the advisory board — restore by uncommenting.
+    // {
+    //   name: 'Gobind Sahney',
+    //   role: 'Investments',
+    //   title: 'Founder, Chairman & CEO of Alpha Growth plc, with $750M+ in alternative assets acquired across the US, UK, and Europe',
+    //   image: '/images/Gobind Sahney.png',
+    //   linkedin: 'https://www.linkedin.com/in/gobind-sahney/',
+    //   grayscale: true,
+    // },
     {
       name: 'Chad Mestler',
       role: 'Capital Markets',

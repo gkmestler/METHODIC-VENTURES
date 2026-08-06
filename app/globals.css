@@ -1452,7 +1452,7 @@ a.portfolio-card {
   position: relative;
   z-index: 1;
   background: #000000;
-  border-radius: 20px;
+  border-radius: 4px;
   padding: 60px 40px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
   overflow: hidden;
@@ -1717,7 +1717,7 @@ a.portfolio-card {
   width: 100%;
   max-width: 500px;
   height: auto;
-  border-radius: 16px;
+  border-radius: 4px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
@@ -1817,5 +1817,48 @@ a.portfolio-card {
   .select-wrapper select {
     height: 42px;
     font-size: 13px;
+  }
+}
+/* Managing partner cards — three across, sharing one bio below */
+.partners-grid {
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .partners-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 1010px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.partners-card {
+  cursor: default;
+  height: 480px;
+  max-width: 320px;
+}
+
+.partners-card .team-image {
+  filter: grayscale(100%) contrast(1.05) brightness(1.02);
+}
+
+.partners-bio {
+  max-width: 820px;
+  margin: 0 auto 50px auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #000000;
+  opacity: 0.85;
+  text-align: center;
+}
+
+@media (max-width: 575px) {
+  .partners-bio {
+    font-size: 14px;
+    margin-bottom: 30px;
   }
 }
